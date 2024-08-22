@@ -1,0 +1,7 @@
+.profile {position:fixed; top:5rem; left:10rem; width:400px; height:calc(100% - 10rem);}
+.profile .inner {display:flex; flex-direction:column; justify-content:space-between; align-items:start; position:relative; width:100%; height:100%; padding:5rem; background:#ebf0f7; border:1px solid #d1d5e0; border-radius:var(--radius-xl);}
+.profile .inner .profile_name {margin-bottom:2rem; color:#22232c; font-size:3.6rem; font-weight:700; line-height:1;}
+.profile .inner .profile_img {display:flex; justify-content:center; align-items:center; overflow:hidden; width:100%; height:300px; background:#e6ebf4; border-radius:var(--radius-l);}
+.profile .inner .profile_img img {max-width:200px;}
+.profile .inner .info_section > h4 {margin-bottom:0.4rem; color:#424550; font-size:1.5rem; font-weight:400;}
+.profile .inner .info_section > p {color:#22232c; font-size:2rem; font-weight:600;}
