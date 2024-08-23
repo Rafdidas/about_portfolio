@@ -6,6 +6,7 @@
   url('../src/Font/PretendardVariable.woff2') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,11 +52,17 @@ a:focus {text-decoration:none; cursor:pointer;}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
 
-body {background:#e6ebf4; min-height: 1500px;;}
+body {background:#e6ebf4; }
+section {width:100%;}
 
 :root{
-  --radus-m: 2.6rem;
+  --radius-s: 2rem;
+  --radius-m: 2.6rem;
   --radius-l: 3rem;
   --radius-xl: 3.5rem;
+  --animbezier: cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  --accent: #aa70e0;
+  --secondary: #7059e2;
 }
 
+.wrapper {padding-left:500px; min-height:700px;}

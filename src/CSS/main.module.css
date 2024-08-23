@@ -1,0 +1,4 @@
+#main .intro {
+    position: relative;
+    height: calc(100vh - 8rem);
+}
