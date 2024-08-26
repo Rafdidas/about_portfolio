@@ -1,4 +1,19 @@
-#main .intro {
-    position: relative;
-    height: calc(100vh - 8rem);
-}
+#main .intro {position: relative; height: calc(100vh - 8rem);}
+#main .headline_subtitle {display:inline-flex; align-items:center; height:3.8rem; margin-bottom: 2.2rem; padding:0 1.4rem; border-radius:var(--radius-xs); border:1px solid #d1d5e0; background:#e6ebf4;}
+#main .headline_subtitle img {margin-right:1rem;}
+#main .headline_subtitle span {font-family: 'Syne'; font-size:1.5rem; font-weight:700; line-height: 3.8rem;}
+
+
+#main .intro .headline {position:absolute; left:0; bottom:2rem; padding:0 10rem 0 5rem; width:100%;}
+
+#main .intro .headline .headline_title {max-width:900px; background:linear-gradient(15deg, #8f56cc 0%, #5d4ec4 80%); background-clip:text; -webkit-text-fill-color:transparent; font-family: 'Syne'; color:#8f56cc; font-size:8rem; line-height:1.2;}
+#main .intro .headline .section_btn {display:inline-flex; align-items:center; margin-top:4.8rem; padding:0 2.4rem; background:#e6ebf4; border:1px solid #a8b0c1; border-radius:var(--radius-m); }
+#main .intro .headline .section_btn > a {display:inline-flex; align-items:center; font-family: 'Syne'; color:#22232c; font-size:2rem; font-weight:600; line-height:6rem;}
+#main .intro .headline .section_btn img {width:22px; height:22px; margin-left:1rem;}
+
+#main .inner.inner_first {padding:16rem 0 2rem 0;}
+#main .inner .cont_box {padding:0 10rem 0 5rem;}
+#main .inner .cont_box.cont_title {margin-bottom:0.4rem;}
+#main .inner .cont_box .cont_title {max-width:90rem; background:linear-gradient(15deg, #8f56cc 0%, #5d4ec4 80%); background-clip:text; -webkit-text-fill-color:transparent; font-family: 'Syne'; color:#8f56cc; font-size:6rem; line-height:1.2;}
+
+#main .inner .cont_box.grid_box {padding:0 7.5rem 0 2.5rem;}

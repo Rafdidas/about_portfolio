@@ -56,6 +56,7 @@ body {background:#e6ebf4; }
 section {width:100%;}
 
 :root{
+  --radius-xs: 1.7rem;
   --radius-s: 2rem;
   --radius-m: 2.6rem;
   --radius-l: 3rem;

@@ -16,7 +16,7 @@ const Profile = () => {
                     <p>
                         HELLO, I’M HYEONGYU<br/>
                         The current web publisher,<br/>
-                        Studying front-end developers
+                        Studying front-end developer.
                     </p>
                 </div>
                 <div className={moduleStyle.info_section}>

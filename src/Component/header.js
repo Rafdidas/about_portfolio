@@ -5,7 +5,7 @@ const Header = () => {
         <header className={moduleStyle.header}>
             <div className={moduleStyle.hd_navi}>
                 <ul>
-                    <li><span>Home</span></li>
+                    <li><span className={moduleStyle.active}>Home</span></li>
                     <li><span>Portfolio</span></li>
                     <li><span>About</span></li>
                     <li><span>Resume</span></li>
