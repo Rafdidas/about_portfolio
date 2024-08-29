@@ -18,7 +18,22 @@ const Main = () => {
                     <p className={moduleStyle.headline_subtitle}><img src={process.env.PUBLIC_URL + '../img/dot.svg'} alt="dot" /><span>Portfolio</span></p>
                     <h2 className={moduleStyle.cont_title}>Check out my featured projects</h2>
                 </div>
-                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}></div>
+                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
+                    <div className={moduleStyle.section}>
+                        <div className={moduleStyle.img}>
+                            <img src={process.env.PUBLIC_URL + '../img/mbdb_detail.png'} alt="mbdb_detail" />
+                            <img src={process.env.PUBLIC_URL + '../img/mbdb.png'} alt="mbdb" />
+                            <img src={process.env.PUBLIC_URL + '../img/mbdb_movie.png'} alt="mbdb_movie" />
+                            <img src={process.env.PUBLIC_URL + '../img/mbdb_tv.png'} alt="mbdb_tv" />
+                        </div>
+                        <div className={moduleStyle.cont_text}>
+                            <h3>movie_db</h3>
+                            <p>영화와 TV Series 인기목록, 상영작, 해당 영화의 상세정보를 알 수 있는 사이트입니다.</p>
+                            <p>React, TMDB Api를 활용하여 작업하였습니다.</p>
+                            <a href="https://rafdidas.github.io/movie_db/" target="_blank" rel="noopener noreferrer">https://rafdidas.github.io/movie_db/</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     )

@@ -16,4 +16,7 @@
 #main .inner .cont_box.cont_title {margin-bottom:0.4rem;}
 #main .inner .cont_box .cont_title {max-width:90rem; background:linear-gradient(15deg, #8f56cc 0%, #5d4ec4 80%); background-clip:text; -webkit-text-fill-color:transparent; font-family: 'Syne'; color:#8f56cc; font-size:6rem; line-height:1.2;}
 
-#main .inner .cont_box.grid_box {padding:0 7.5rem 0 2.5rem;}
+#main .inner .cont_box.grid_box {padding:0 7.5rem 0 5rem;}
+#main .inner .cont_box.grid_box .section {display:grid; align-items:start; justify-content:start; grid-template-columns:40% 58%; gap:2%; margin-top:5rem;}
+#main .inner .cont_box.grid_box .section .img {display:grid; align-items:start; justify-content:start; grid-template-columns:repeat(2, 49%); gap:2%; }
+#main .inner .cont_box.grid_box .section .img img {width:100%; height:auto; max-height: 166px; border-radius:var(--radius-m);}
