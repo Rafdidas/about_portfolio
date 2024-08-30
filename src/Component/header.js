@@ -8,7 +8,6 @@ const Header = () => {
                     <li><span className={moduleStyle.active}>Home</span></li>
                     <li><span>Portfolio</span></li>
                     <li><span>About</span></li>
-                    <li><span>Resume</span></li>
                     <li><span>Contact</span></li>
                 </ul>
             </div>

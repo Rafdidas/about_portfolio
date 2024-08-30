@@ -20,3 +20,23 @@
 #main .inner .cont_box.grid_box .section {display:grid; align-items:start; justify-content:start; grid-template-columns:40% 58%; gap:2%; margin-top:5rem;}
 #main .inner .cont_box.grid_box .section .img {display:grid; align-items:start; justify-content:start; grid-template-columns:repeat(2, 49%); gap:2%; }
 #main .inner .cont_box.grid_box .section .img img {width:100%; height:auto; max-height: 166px; border-radius:var(--radius-m);}
+#main .inner .cont_box.grid_box .section .cont_text > h3 {padding-bottom:2rem; font-family: 'Syne'; color:#22232c; font-size:3rem;}
+#main .inner .cont_box.grid_box .section .cont_text > p {max-width:60rem; padding-bottom:1rem; color:#424550; font-size:2rem;}
+#main .inner .cont_box.grid_box .section .cont_text > a {display:block; width:100%; max-width:30rem; border-radius:var(--radius-m); background:linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%); font-family: 'Syne'; color:#fff; font-size:2rem; font-weight:700; line-height:5rem; text-align:center;}
+
+#main .inner .cont_box.about_box .section .title_section {margin:4.1rem 0 3rem;}
+#main .inner .cont_box.about_box .section .title_section > h3 {font-family:'Syne'; color:#22232c; font-size:4.4rem;}
+#main .inner .cont_box.about_box .section .now_work {margin-bottom:3.7rem; color:#424550; font-size:2.4rem; line-height:1.7;}
+#main .inner .cont_box.about_box .section .work_list {border-bottom: 1px solid #d1d5e0;}
+#main .inner .cont_box.about_box .section .work_list .section_box {display:flex; justify-content:start; align-items:start; padding:4.4rem 0 4rem 0; border-top:1px solid #d1d5e0;}
+#main .inner .cont_box.about_box .section .work_list .section_box .year {width:20%; color:#424550; font-size:1.5rem; font-variant-numeric:lining-nums;}
+#main .inner .cont_box.about_box .section .work_list .section_box .company {width:35%;}
+#main .inner .cont_box.about_box .section .work_list .section_box .company > p {color:#22232c; font-size:2.2rem; font-weight:700;}
+#main .inner .cont_box.about_box .section .work_list .section_box .company > p > span {display:block; margin-top:0.3rem; color:#424550; font-size:1.5rem; font-weight:400;}
+#main .inner .cont_box.about_box .section .work_list .section_box .company > p > span  > strong {color:#424550; font-size:1.5rem; font-weight:700;}
+#main .inner .cont_box.about_box .section .work_list .section_box .project {width: 45%;}
+#main .inner .cont_box.about_box .section .work_list .section_box .project > p {color:#424550; font-size:2rem; line-height:1.7;}
+
+#main .inner .cont_box.about_box .section .skill_list {display:flex; justify-content:space-between; align-items:center; column-gap:2rem;}
+#main .inner .cont_box.about_box .section .skill_list .tool_box {width:100%; padding:3rem; background:#e6ebf4; border-radius:var(--radius-xl); border:1px solid #d1d5e0; text-align:center;}
+#main .inner .cont_box.about_box .section .skill_list .tool_box > p {margin-top:1.5rem; color:#22232c; font-size:2rem; font-weight:700; font-variant-numeric:lining-nums;}
