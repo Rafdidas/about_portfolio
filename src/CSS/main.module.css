@@ -3,7 +3,6 @@
 #main .headline_subtitle img {margin-right:1rem;}
 #main .headline_subtitle span {font-family: 'Syne'; font-size:1.5rem; font-weight:700; line-height: 3.8rem;}
 
-
 #main .intro .headline {position:absolute; left:0; bottom:2rem; padding:0 10rem 0 5rem; width:100%;}
 
 #main .intro .headline .headline_title {max-width:900px; background:linear-gradient(15deg, #8f56cc 0%, #5d4ec4 80%); background-clip:text; -webkit-text-fill-color:transparent; font-family: 'Syne'; color:#8f56cc; font-size:8rem; line-height:1.2;}
@@ -40,3 +39,8 @@
 #main .inner .cont_box.about_box .section .skill_list {display:flex; justify-content:space-between; align-items:center; column-gap:2rem;}
 #main .inner .cont_box.about_box .section .skill_list .tool_box {width:100%; padding:3rem; background:#e6ebf4; border-radius:var(--radius-xl); border:1px solid #d1d5e0; text-align:center;}
 #main .inner .cont_box.about_box .section .skill_list .tool_box > p {margin-top:1.5rem; color:#22232c; font-size:2rem; font-weight:700; font-variant-numeric:lining-nums;}
+
+#main .inner .cont_box.about_box .section .about_text {padding-bottom:14.2rem;}
+#main .inner .cont_box.about_box .section .about_text > p { padding:5px 0;}
+#main .inner .cont_box.about_box .section .about_text > p,
+#main .inner .cont_box.about_box .section .about_text > p > strong {color:#424550; font-size:2rem; line-height:1.7; word-break:keep-all;}

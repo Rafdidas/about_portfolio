@@ -1,14 +1,23 @@
 import './App.css';
-import Header from './Component/header';
-import Main from './Component/main';
-import Profile from './Component/profile';
+import BackGround from './Component/background.component';
+import Header from './Component/header.component';
+import Main from './Component/main.component';
+import Profile from './Component/profile.component.';
 
 function App() {
+  const scrollToSection = (id) => {
+      const section = document.getElementById(id);
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+  };
+  
   return (
     <div className="wrapper">
-      <Header/>
+      <Header scrollToSection={scrollToSection} />
+      <BackGround/>
       <Profile/>
-      <Main/>
+      <Main scrollToSection={scrollToSection} />
     </div>
   );
 }

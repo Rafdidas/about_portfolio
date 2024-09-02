@@ -33,8 +33,8 @@ const Profile = () => {
                     <ul className={moduleStyle.socials}>
                         <li><a href="https://github.com/Rafdidas" target="_blank" rel="noopener noreferrer"><img src={process.env.PUBLIC_URL + '../img/github_b.png'} alt="github" /></a></li>
                     </ul>
-                    <span className={moduleStyle.profile_btn}>
-                        <a href="https://github.com/Rafdidas" target="_blank" rel="noopener noreferrer">Check My Profile</a>
+                    <span className={`${moduleStyle.profile_btn}`}>
+                        <a className='hover_cont' href="https://github.com/Rafdidas" target="_blank" rel="noopener noreferrer">Check My Profile</a>
                     </span>
                 </div>
             </div>
