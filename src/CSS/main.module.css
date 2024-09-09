@@ -18,7 +18,7 @@
 #main .inner .cont_box.grid_box {padding:0 7.5rem 0 5rem;}
 #main .inner .cont_box.grid_box .section {display:grid; align-items:start; justify-content:start; grid-template-columns:40% 58%; gap:2%; margin-top:5rem;}
 #main .inner .cont_box.grid_box .section .img {display:grid; align-items:start; justify-content:start; grid-template-columns:repeat(2, 49%); gap:2%; }
-#main .inner .cont_box.grid_box .section .img img {width:100%; height:auto; max-height: 166px; border-radius:var(--radius-m);}
+#main .inner .cont_box.grid_box .section .img img {width:100%; height:auto; min-height:166px; max-height: 166px; border-radius:var(--radius-m);}
 #main .inner .cont_box.grid_box .section .cont_text > h3 {padding-bottom:2rem; font-family: 'Syne'; color:#22232c; font-size:3rem;}
 #main .inner .cont_box.grid_box .section .cont_text > p {max-width:60rem; padding-bottom:1rem; color:#424550; font-size:2rem;}
 #main .inner .cont_box.grid_box .section .cont_text > a {display:block; width:100%; max-width:30rem; border-radius:var(--radius-m); background:linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%); font-family: 'Syne'; color:#fff; font-size:2rem; font-weight:700; line-height:5rem; text-align:center;}

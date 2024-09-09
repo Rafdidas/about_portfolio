@@ -27,7 +27,7 @@ const Main = ({scrollToSection}) => {
         <div id={moduleStyle.main}>
             <section id={`home`} className={`${moduleStyle.intro} section`}>
                 <div id={moduleStyle.headline} className={moduleStyle.headline}>
-                    <p className={`${moduleStyle.headline_subtitle} animate`}><img src={process.env.PUBLIC_URL + '../img/dot.svg'} alt="dot" /><span>Introduce</span></p>
+                    <p className={`${moduleStyle.headline_subtitle} animate`}><img src={process.env.PUBLIC_URL + '/img/dot.svg'} alt="dot" /><span>Introduce</span></p>
                     <h1 className={`${moduleStyle.headline_title} animate more_ani`}>
                         I'm HyeonGyu.<br/>
                         Studying front-end developer.
@@ -35,21 +35,21 @@ const Main = ({scrollToSection}) => {
                     <p className={`${moduleStyle.section_btn} hover_cont`}><a href="#portfolio" onClick={(e)=>{
                         e.preventDefault();
                         scrollToSection('portfolio');
-                    }}>My Portfolio<img src={process.env.PUBLIC_URL + '../img/menu_icon.png'} alt="dot" /></a></p>
+                    }}>My Portfolio<img src={process.env.PUBLIC_URL + '/img/menu_icon.png'} alt="dot" /></a></p>
                 </div>
             </section>
             <section id={`portfolio`} className={`${moduleStyle.inner} ${moduleStyle.inner_first} ${moduleStyle.portfolio} section`}>
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.cont_title} animate`}>
-                    <p className={`${moduleStyle.headline_subtitle} animate`}><img src={process.env.PUBLIC_URL + '../img/dot.svg'} alt="dot" /><span>Portfolio</span></p>
+                    <p className={`${moduleStyle.headline_subtitle} animate`}><img src={process.env.PUBLIC_URL + '/img/dot.svg'} alt="dot" /><span>Portfolio</span></p>
                     <h2 className={`${moduleStyle.cont_title} animate more_ani`}>Check out my featured projects</h2>
                 </div>
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
                     <div className={moduleStyle.section}>
                         <div className={`${moduleStyle.img} animate more_ani`}>
-                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '../img/mbdb_detail.png'} alt="mbdb_detail" />
-                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '../img/mbdb.png'} alt="mbdb" />
-                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '../img/mbdb_movie.png'} alt="mbdb_movie" />
-                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '../img/mbdb_tv.png'} alt="mbdb_tv" />
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb_detail.png'} alt="mbdb_detail" />
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb.png'} alt="mbdb" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/mbdb_movie.png'} alt="mbdb_movie" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/mbdb_tv.png'} alt="mbdb_tv" />
                         </div>
                         <div className={`${moduleStyle.cont_text} animate more_ani2`}>
                             <h3>MOVIE_DB</h3>
@@ -66,10 +66,38 @@ const Main = ({scrollToSection}) => {
                         </div>
                     </div>
                 </div>
+                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
+                    <div className={moduleStyle.section}>
+                        <div className={`${moduleStyle.img} animate more_ani`}>
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_main.png'} alt="poke_dex_main" />
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_search.png'} alt="poke_dex_search" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_type.png'} alt="poke_dex_type" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_detail.png'} alt="poke_dex_detail" />
+                        </div>
+                        <div className={`${moduleStyle.cont_text} animate more_ani2`}>
+                            <h3>POKEDEX</h3>
+                            <p>PokeApi 를 이용한 나만의 포켓몬 도감</p>
+                            <p>
+                                1번 부터 151번 까지의 포켓몬의 정보를 가져오고 메인 화면에는 16개의 포켓몬만 노출 하단의 페이지네이션으로 이동 가능.
+                            </p>
+                            <p>
+                                검색 인풋을 이용하여 인풋에 입력하는 입력값이 포함 된 항목들을 노출시킴
+                            </p>
+                            <p>
+                                노출 되어있는 속성값을 클릭 시 해당하는 클릭 값을 가지고 있는 항목들만 노출
+                            </p>
+                            <p>
+                                해당 카드 클릭 시 상세 정보를 알 수 있는 상세페이지로 이동
+                            </p>
+                            <p>React, PokeApi를 활용하여 작업하였습니다.</p>
+                            <a  className={`hover_cont`} href="https://rafdidas.github.io/poke_dex/" target="_blank" rel="noopener noreferrer">View Page</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id={`about`} className={`${moduleStyle.inner} ${moduleStyle.inner_first} ${moduleStyle.about} section`}>
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.cont_title}`}>
-                    <p className={`${moduleStyle.headline_subtitle} animate `}><img src={process.env.PUBLIC_URL + '../img/dot.svg'} alt="dot" /><span>About Me</span></p>
+                    <p className={`${moduleStyle.headline_subtitle} animate `}><img src={process.env.PUBLIC_URL + '/img/dot.svg'} alt="dot" /><span>About Me</span></p>
                     <h2 className={`${moduleStyle.cont_title} animate more_ani`}>Who Am I?<br/>I will tell you about me</h2>
                 </div>
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.about_box}`}>
@@ -138,23 +166,23 @@ const Main = ({scrollToSection}) => {
                         </div>
                         <div className={`${moduleStyle.skill_list} animate ani_more`}>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '../img/html.png'} alt="html" />
+                                <img src={process.env.PUBLIC_URL + '/img/html.png'} alt="html" />
                                 <p>HTML5</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '../img/css.png'} alt="CSS" />
+                                <img src={process.env.PUBLIC_URL + '/img/css.png'} alt="CSS" />
                                 <p>CSS3</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '../img/js.png'} alt="js" />
+                                <img src={process.env.PUBLIC_URL + '/img/js.png'} alt="js" />
                                 <p>Java Script</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '../img/jquery_color.png'} alt="Jquery" />
+                                <img src={process.env.PUBLIC_URL + '/img/jquery_color.png'} alt="Jquery" />
                                 <p>Jquery</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '../img/react.png'} alt="React" />
+                                <img src={process.env.PUBLIC_URL + '/img/react.png'} alt="React" />
                                 <p>React</p>
                             </div>
                         </div>
