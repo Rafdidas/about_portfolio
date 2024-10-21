@@ -27,6 +27,7 @@ const Profile = () => {
                         <span className={moduleStyle.stack_img}><img src={process.env.PUBLIC_URL + '/img/js_b.png'} alt="javascript" /></span>
                         <span className={moduleStyle.stack_img}><img src={process.env.PUBLIC_URL + '/img/jquery.png'} alt="jquery" /></span>
                         <span className={moduleStyle.stack_img}><img src={process.env.PUBLIC_URL + '/img/react_b.png'} alt="react" /></span>
+                        <span className={moduleStyle.stack_img}><img src={process.env.PUBLIC_URL + '/img/sass_b.png'} alt="sass" /></span>
                     </div>
                 </div>
                 <div className={moduleStyle.info_section}>

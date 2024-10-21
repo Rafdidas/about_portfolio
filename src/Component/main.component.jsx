@@ -185,6 +185,10 @@ const Main = ({scrollToSection}) => {
                                 <img src={process.env.PUBLIC_URL + '/img/react.png'} alt="React" />
                                 <p>React</p>
                             </div>
+                            <div className={`${moduleStyle.tool_box} hover_cont`}>
+                                <img src={process.env.PUBLIC_URL + '/img/sass.png'} alt="sass" />
+                                <p>SASS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
