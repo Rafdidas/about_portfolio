@@ -62,7 +62,7 @@ const Main = ({scrollToSection}) => {
                                 영화의 상세페이지에서는 영화의 포스터 썸네일과 배경을 넣었으며, 영화의 간단한 소개, 개봉 날짜, 수익, 상영 시간, 별점의 정보를 확인 할 수 있습니다.
                             </p>
                             <p>React, TMDB Api를 활용하여 작업하였습니다.</p>
-                            <a  className={`hover_cont`} href="https://rafdidas.github.io/movie_db/" target="_blank" rel="noopener noreferrer">View Page</a>
+                            <a  className={`hover_cont`} href="https://movie-db-v1.netlify.app/" target="_blank" rel="noopener noreferrer">View Page</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const Main = ({scrollToSection}) => {
                                 해당 카드 클릭 시 상세 정보를 알 수 있는 상세페이지로 이동
                             </p>
                             <p>React, PokeApi를 활용하여 작업하였습니다.</p>
-                            <a  className={`hover_cont`} href="https://rafdidas.github.io/poke_dex/" target="_blank" rel="noopener noreferrer">View Page</a>
+                            <a  className={`hover_cont`} href="https://pokedex-center-v1.netlify.app/" target="_blank" rel="noopener noreferrer">View Page</a>
                         </div>
                     </div>
                 </div>
