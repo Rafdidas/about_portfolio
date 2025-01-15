@@ -46,6 +46,30 @@ const Main = ({scrollToSection}) => {
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
                     <div className={moduleStyle.section}>
                         <div className={`${moduleStyle.img} animate more_ani`}>
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/prive_main.png'} alt="prive_main" />
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/prive_cart.png'} alt="prive_cart" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/prive_order.png'} alt="prive_order" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/prive_detail.png'} alt="prive_detail" />
+                        </div>
+                        <div className={`${moduleStyle.cont_text} animate more_ani2`}>
+                            <h3>PRIVE</h3>
+                            <p>FakeStoreAPI 를 이용한 쇼핑몰</p>
+                            <p>
+                                React, React-router-dom, Scss, TypeScript, Redux를 사용<br/>
+                                메인, 리스트, 상세, 장바구니, 주문서, 주문완료, 로그인으로 구성
+                            </p>
+                            <p>
+                                메인을 슬라이드와 배너, 상품들로 꾸미고, 리스트에 상품을 진열,
+                                장바구니 담기, 상세이동 가능하며, 장바구니에서 주문서로 이동 가능능
+                            </p>
+                            <p>반응형으로 작업</p>
+                            <a  className={`hover_cont`} href="https://prive-shop.netlify.app/ " target="_blank" rel="noopener noreferrer">View Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
+                    <div className={moduleStyle.section}>
+                        <div className={`${moduleStyle.img} animate more_ani`}>
                             <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb_detail.png'} alt="mbdb_detail" />
                             <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb.png'} alt="mbdb" />
                             <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/mbdb_movie.png'} alt="mbdb_movie" />
@@ -66,6 +90,7 @@ const Main = ({scrollToSection}) => {
                         </div>
                     </div>
                 </div>
+                
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
                     <div className={moduleStyle.section}>
                         <div className={`${moduleStyle.img} animate more_ani`}>
@@ -178,8 +203,8 @@ const Main = ({scrollToSection}) => {
                                 <p>Java Script</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
-                                <img src={process.env.PUBLIC_URL + '/img/jquery_color.png'} alt="Jquery" />
-                                <p>Jquery</p>
+                                <img src={process.env.PUBLIC_URL + '/img/types.png'} alt="typeScript" />
+                                <p>Type Script</p>
                             </div>
                             <div className={`${moduleStyle.tool_box} hover_cont`}>
                                 <img src={process.env.PUBLIC_URL + '/img/react.png'} alt="React" />

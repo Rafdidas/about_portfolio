@@ -76,3 +76,7 @@ section {width:100%;}
 .animate.more_ani {transform:translate(0px, 80px); -webkit-transition:all 1.2s ease; -moz-transition:all 1.2s ease; -o-transition:all 1.2s ease; transition:all 1.2s ease;}
 .animate.more_ani2 {transform:translate(0px, 100px); -webkit-transition:all 1.4s ease; -moz-transition:all 1.4s ease; -o-transition:all 1.4s ease; transition:all 1.4s ease;}
 .animate.active {transform: translate(0, 0);}
+
+@media all and (max-width:1024px) {
+  .wrapper {padding-left:0; min-height:700px;}
+}
