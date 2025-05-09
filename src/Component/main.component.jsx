@@ -70,6 +70,31 @@ const Main = ({scrollToSection}) => {
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
                     <div className={moduleStyle.section}>
                         <div className={`${moduleStyle.img} animate more_ani`}>
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_main.png'} alt="poke_dex_main" />
+                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_search.png'} alt="poke_dex_search" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_type.png'} alt="poke_dex_type" />
+                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_detail.png'} alt="poke_dex_detail" />
+                        </div>
+                        <div className={`${moduleStyle.cont_text} animate more_ani2`}>
+                            <h3>POKEDEX</h3>
+                            <p>PokeApi 를 이용한 나만의 포켓몬 도감</p>
+                            <p>
+                                Next.js 15 기반으로 만든 포켓몬 도감 웹 애플리케이션입니다.
+                            </p>
+                            <p>
+                                PokeAPI를 활용하여 포켓몬 데이터를 불러오고, React Query와 Zustand로 상태 관리를 수행합니다.
+                            </p>
+                            <p>
+                                기존의 react만으로 만들었던 포켓몬 도감에 검색과, 타입분류 및 무한 스크롤을 적용하여 Next.js 로 변형.
+                            </p>
+                            <p>React, PokeApi를 활용하여 작업하였습니다.</p>
+                            <a  className={`hover_cont`} href="https://poke-dex-next.vercel.app/" target="_blank" rel="noopener noreferrer">View Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
+                    <div className={moduleStyle.section}>
+                        <div className={`${moduleStyle.img} animate more_ani`}>
                             <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb_detail.png'} alt="mbdb_detail" />
                             <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/mbdb.png'} alt="mbdb" />
                             <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/mbdb_movie.png'} alt="mbdb_movie" />
@@ -91,34 +116,7 @@ const Main = ({scrollToSection}) => {
                     </div>
                 </div>
                 
-                <div className={`${moduleStyle.cont_box} ${moduleStyle.grid_box}`}>
-                    <div className={moduleStyle.section}>
-                        <div className={`${moduleStyle.img} animate more_ani`}>
-                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_main.png'} alt="poke_dex_main" />
-                            <img className={`hover_cont`} src={process.env.PUBLIC_URL + '/img/poke_dex_search.png'} alt="poke_dex_search" />
-                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_type.png'} alt="poke_dex_type" />
-                            <img className={`hover_cont`}src={process.env.PUBLIC_URL + '/img/poke_dex_detail.png'} alt="poke_dex_detail" />
-                        </div>
-                        <div className={`${moduleStyle.cont_text} animate more_ani2`}>
-                            <h3>POKEDEX</h3>
-                            <p>PokeApi 를 이용한 나만의 포켓몬 도감</p>
-                            <p>
-                                1번 부터 151번 까지의 포켓몬의 정보를 가져오고 메인 화면에는 16개의 포켓몬만 노출 하단의 페이지네이션으로 이동 가능.
-                            </p>
-                            <p>
-                                검색 인풋을 이용하여 인풋에 입력하는 입력값이 포함 된 항목들을 노출시킴
-                            </p>
-                            <p>
-                                노출 되어있는 속성값을 클릭 시 해당하는 클릭 값을 가지고 있는 항목들만 노출
-                            </p>
-                            <p>
-                                해당 카드 클릭 시 상세 정보를 알 수 있는 상세페이지로 이동
-                            </p>
-                            <p>React, PokeApi를 활용하여 작업하였습니다.</p>
-                            <a  className={`hover_cont`} href="https://pokedex-center-v1.netlify.app/" target="_blank" rel="noopener noreferrer">View Page</a>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
             <section id={`about`} className={`${moduleStyle.inner} ${moduleStyle.inner_first} ${moduleStyle.about} section`}>
                 <div className={`${moduleStyle.cont_box} ${moduleStyle.cont_title}`}>
