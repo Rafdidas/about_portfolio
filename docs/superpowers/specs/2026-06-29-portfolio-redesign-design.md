@@ -15,7 +15,9 @@
 |---|---|
 | 범위 | 전면 재디자인 (구조 + 디자인 + 콘텐츠) |
 | 비주얼 무드 | 미니멀·클린 라이트 (화이트/오프화이트, 포인트 컬러 1개) |
-| 기술 토대 | CRA + CSS Modules 유지 + **콘텐츠 데이터 구조화** |
+| 기술 토대 | **CRA → Next.js(App Router) 마이그레이션** + CSS Modules 유지 + **콘텐츠 데이터 구조화** |
+| 배포 | **Netlify → Vercel** (현재 레포 그대로 전환, 사용자가 Vercel 연결) |
+| 브랜치 | `master` → `main` 으로 정리 |
 | 레이아웃 | 기존 좌측 고정 프로필 → **상단 스티키 네비 + 중앙 정렬 섹션** 전환 |
 | 섹션 순서 | Hero → Career → Projects → Skills → About |
 
@@ -62,28 +64,43 @@
 - 자기소개 갱신: 이커머스 운영 경험 + 현재 B2B 업무 시스템·디자인 시스템 관점으로 역량 확장하는 서사
 - 성격/태도 문장 유지하되 현재형으로 정돈
 
-## 5. 기술 / 파일 구조
+## 5. 기술 / 파일 구조 (Next.js App Router)
 
 ```
-src/
-  data/
-    career.js      # 회사·연도·프로젝트·성과 배열
-    projects.js    # 개인 프로젝트 배열 (썸네일, 스택, 링크)
-    skills.js      # 스택 배열 (이름, 아이콘)
-  Component/
-    header.component.jsx
-    hero.component.jsx       (신규)
-    career.component.jsx     (신규)
-    projects.component.jsx   (기존 portfolio 재구성)
-    skills.component.jsx     (신규)
-    about.component.jsx      (신규)
-  CSS/
-    *.module.css   # 섹션별, :root 토큰은 index.css 또는 별도 tokens.css
+app/
+  layout.js          # 루트 레이아웃, 폰트/메타데이터
+  page.js            # 단일 랜딩 (섹션 컴포넌트 조합)
+  globals.css        # :root 토큰(컬러·간격·폰트), 리셋, 공통 애니메이션
+components/
+  Header.jsx         # 상단 스티키 네비
+  Hero.jsx
+  Career.jsx
+  Projects.jsx
+  Skills.jsx
+  About.jsx
+  *.module.css       # 섹션별 CSS Modules
+data/
+  career.js          # 회사·연도·프로젝트·성과 배열
+  projects.js        # 개인 프로젝트 배열 (썸네일, 스택, 링크)
+  skills.js          # 스택 배열 (이름, 아이콘)
+public/
+  img/...            # 기존 에셋 이전
 ```
 
 - 데이터는 배열로 분리하고 컴포넌트에서 `.map()` 렌더 → 내용 수정 용이.
-- 기존 `profile.component..jsx`(좌측 고정 프로필)는 제거 또는 Hero/Header로 흡수.
-- README도 현재 구성에 맞게 갱신.
+- 스크롤 애니메이션/active 네비 등 브라우저 의존 로직은 `'use client'` 컴포넌트에서 `useEffect`로 처리.
+- 이미지 경로: `process.env.PUBLIC_URL + '/img/...'` → `/img/...` (또는 `next/image`).
+- 기존 CRA 파일(src/, public/index.html, App.* 등) 제거. `public/img` 에셋은 유지.
+- README·배포 뱃지/URL을 Vercel 기준으로 갱신.
+
+## 8. 마이그레이션 / 배포 단계
+
+1. CRA 잔재 제거 후 Next.js 구조로 재구성 (package.json, next.config 등).
+2. 섹션 컴포넌트 + 데이터 + 스타일 구현.
+3. 로컬 `npm run dev` 검증.
+4. 브랜치 `master` → `main` 정리 후 푸시.
+5. (사용자) Vercel에서 레포 연결 → production 브랜치 main, 자동 감지 배포.
+6. (사용자) 필요 시 기존 Netlify 사이트 정리.
 
 ## 6. 작업 방식
 
