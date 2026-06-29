@@ -17,14 +17,12 @@ export default function Skills() {
         <ul className={styles.grid} data-reveal>
           {skills.map((s) => (
             <li key={s.name} className={styles.item}>
-              <span className={styles.icon}>
-                {s.icon ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={s.icon} alt={s.name} loading="lazy" />
-                ) : (
-                  <span className={styles.initial}>{s.name.charAt(0)}</span>
-                )}
-              </span>
+              <span
+                className={styles.icon}
+                style={{ "--icon": `url(/icons/${s.icon}.svg)` }}
+                role="img"
+                aria-label={s.name}
+              />
               <span className={styles.name}>{s.name}</span>
             </li>
           ))}
