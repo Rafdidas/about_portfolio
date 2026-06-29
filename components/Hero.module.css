@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 120px 0 80px;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  margin-top: 26px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(38px, 7vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.title strong {
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.lead {
+  margin-top: 28px;
+  max-width: 560px;
+  font-size: clamp(16px, 2.2vw, 19px);
+  line-height: 1.7;
+  color: var(--text-sub);
+}
+
+.actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary,
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: #fff;
+}
+
+.ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* soft background accent */
+.glow {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(
+    circle,
+    rgba(79, 70, 229, 0.14),
+    rgba(79, 70, 229, 0) 62%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 72px;
+  }
+  .glow {
+    width: 380px;
+    height: 380px;
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 36px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.copy {
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-sub);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 560px) {
+  .inner {
+    justify-content: center;
+    text-align: center;
+  }
+}

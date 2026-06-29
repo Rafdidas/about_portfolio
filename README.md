@@ -1,35 +1,44 @@
-# about_me
-## 페이지 링크 : https://about-me-v1.netlify.app/
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7b422fc2-59c1-4f8b-b729-c174a3fd2002/deploy-status)](https://app.netlify.com/sites/about-me-v1/deploys)
+# about_me — Frontend Portfolio
 
-## 1. 소개 & 참여 인원
-- about_me
-- 특별한 기능없이 저를 소개하고 포트폴리오를 모아서 올릴 목적의 사이트입니다.
-- 전체 페이지 반응형으로 작업예정이며 현재 PC 버전만 작업 된 상태입니다.
-- 개인 프로젝트
+박현규(Park HyeonGyu)의 취업용 포트폴리오 사이트입니다.
+웹 퍼블리셔 경력과 프론트엔드로의 확장을 소개합니다.
 
-## 2. 사용 기술
-#### Front-end
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+## 1. 소개
 
-## 3. 핵심 기능
-- 특별한 기능없이 저를 소개하고 포트폴리오를 모아서 올릴 목적의 사이트입니다.
-- 전체 페이지 반응형으로 작업예정이며 현재 PC 버전만 작업 된 상태입니다.
+- 퍼블리셔 5년+ → 프론트엔드로 역량을 넓혀가는 과정을 담은 개인 포트폴리오.
+- 단일 페이지 구성: **Hero → Career → Projects → Skills → About**.
+- PC · 모바일 반응형.
 
-## 4.페이지 구성
-   #### * HOME
-   - 첫 페이지는 간단한 인삿말
+## 2. 기술 스택
 
-   #### * 좌측 fixed nav 
-   - fixed nav 에서는 저의 미모티콘과 간단한 기술스택과 Github 링크가 있습니다.
+- **Next.js 15** (App Router)
+- **React 18**
+- **CSS Modules** + CSS 변수 기반 디자인 토큰
+- 폰트: Pretendard, Syne
 
-   #### * Portfolio
-   - Portfolio 에는 제가 공부중인 React 의 작업물들이 차차 올려질 예정입니다.
+## 3. 구조
 
-   #### * About
-   - 저의 이력과, 간단한 자기소개로 구성하였습니다.
+```
+app/
+  layout.js        # 루트 레이아웃 · 메타데이터
+  page.js          # 섹션 조합
+  globals.css      # 디자인 토큰 · 리셋 · 스크롤 리빌
+components/        # Header · Hero · Career · Projects · Skills · About · Footer · ScrollReveal
+data/              # career.js · projects.js · skills.js (콘텐츠 데이터)
+public/img         # 이미지 에셋
+public/fonts       # Pretendard 폰트
+```
 
+콘텐츠는 `data/`에 배열로 분리되어 있어, 경력 · 프로젝트 · 스킬 추가/수정이 쉽습니다.
 
+## 4. 로컬 실행
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # 프로덕션 빌드
+```
+
+## 5. 배포
+
+- **Vercel** 에 GitHub 레포 연결 → push 시 자동 배포.
